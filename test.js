@@ -1,12 +1,10 @@
-var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
+let express = require("express");
+let app = express();
 
-MongoClient.connect(url, function(err, db) {
-  if (err) throw err;
-  var dbo = db.db("HELLO");
-  dbo.createCollection("customers1", function(err, res) {
-    if (err) throw err;
-    console.log("Collection created!");
-    db.close();
-  });
+let port = 80;
+app.get("/",(req,res)=>
+{
+  res.send("hello");
 });
+
+app.listen(port,()=> console.log("Listen at port: "+port));

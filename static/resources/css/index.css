@@ -6,6 +6,11 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 body {
   height: 100vh;
   background-color: white;

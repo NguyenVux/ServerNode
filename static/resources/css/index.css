@@ -49,8 +49,6 @@ body {
   text-decoration: none;
   font-family: "Arkibal_heavy",sans-serif;
   font-weight: 900;
-  -webkit-transition: all 5s;
-  transition: all 5s;
 }
 
 .btn-container__btn *::after {
@@ -59,8 +57,8 @@ body {
   width: 0;
   height: 2px;
   background: black;
-  -webkit-transition: all .26s;
-  transition: all .26s;
+  -webkit-transition: all .25s;
+  transition: all .25s;
 }
 
 .btn-container__btn *:hover::after {

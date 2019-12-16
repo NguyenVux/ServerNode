@@ -1,0 +1,39 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+a:visited
+{
+    color:black;
+}
+
+.logo
+{
+        font-size:1.5em;
+}
+.navbar
+{
+    width: 100%;
+    height: 8vh;
+    padding: 0 55px;
+    vertical-align: middle;
+    background-color: red;
+}
+
+.navbtn
+{
+    //float: right;
+   // clear: both;
+    display: inline-flex;
+    justify-content: space-evenly;
+    //font-size: 5em;
+    font-weight: 900;
+    width: 20%;
+}

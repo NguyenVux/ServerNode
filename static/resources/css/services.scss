@@ -6,8 +6,10 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     list-style: none;
+    color: white !important;
 
 }
+//#011f4b • #03396c • #005b96 • #6497b1 • #b3cde0
 
 a:visited
 {
@@ -21,19 +23,23 @@ a:visited
 .navbar
 {
     width: 100%;
-    height: 8vh;
+    height: 6vh;
     padding: 0 55px;
     vertical-align: middle;
-    background-color: red;
+    //display: flex;
+  //justify-content: space-around;
+    background-color: #03396c;
 }
 
 .navbtn
 {
-    //float: right;
-   // clear: both;
+    height: 100%;
+    vertical-align: middle;
+    float: right;
+    clear: both;
     display: inline-flex;
     justify-content: space-evenly;
-    //font-size: 5em;
+    font-size: 1.5em;
     font-weight: 900;
     width: 20%;
 }

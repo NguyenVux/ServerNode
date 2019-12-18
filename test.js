@@ -16,11 +16,22 @@ app.get("/",(req,res)=>
   res.render("index.ejs");
 });
 
-app.get("/:page",(req,res)=>
+app.get("/projects/:page",(req,res)=>
 {
   let file = req.params["page"] + ".ejs";
   console.log(`Processing Request to ${req.params["page"]}`);
-  res.render(file);
+  res.write(file);
+  res.end();
+});
+
+app.get("/projects",(req,res)=>
+{
+  res.render("projects.ejs");
+});
+
+app.get("/services",(req,res)=>
+{
+  res.render("services.ejs");
 });
 
 app.listen(port,()=> console.log("Listen at port: "+port));

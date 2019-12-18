@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar__search {
+  position: relative;
+  width: 20%;
+}
+
+.navbar__search__text {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.navbar__search__submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+/*# sourceMappingURL=projects.css.map */

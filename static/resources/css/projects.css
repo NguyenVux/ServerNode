@@ -1,33 +1,33 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
   font-family: 'Montserrat', sans-serif;
 }
 
 .navbar__search {
   position: relative;
-  width: 20%;
+  width: 40%;
 }
 
 .navbar__search__text {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  padding: 5px;
+  border: none;
+  float: left;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 3px;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
+  background: #f1f1f18e;
+  border-radius: 999999px;
 }
 
 .navbar__search__submit {
   position: absolute;
-  right: 0;
+  padding: 5px;
+  padding-right: 7px;
   top: 0;
-  z-index: 9999;
+  right: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=projects.css.map */

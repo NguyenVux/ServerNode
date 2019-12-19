@@ -6,28 +6,42 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+  width: 100%;
+  padding: 25px 40px;
+  background-color: #1971c2;
+}
+
 .navbar__search {
   position: relative;
-  width: 40%;
+  width: 30%;
+}
+
+.navbar__search * {
+  font-size: 1.1em;
 }
 
 .navbar__search__text {
-  padding: 5px;
+  padding: 15px;
   border: none;
-  float: left;
   width: 100%;
-  background: #f1f1f18e;
+  background: #f1f1f13d;
   border-radius: 999999px;
 }
 
 .navbar__search__submit {
+  color: white;
   position: absolute;
-  padding: 5px;
-  padding-right: 7px;
+  padding: 15px;
+  padding-right: 17px;
   top: 0;
   right: 0;
   border: 0;
   background: none;
   cursor: pointer;
+}
+
+.navbar__search__submit:focus {
+  outline: none !important;
 }
 /*# sourceMappingURL=projects.css.map */

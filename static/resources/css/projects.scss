@@ -6,24 +6,34 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-$searchbar_padding: 5px;
+$color1: #1971c2;
+$searchbar_padding: 15px;
+.navbar
+{
+    width: 100%;
+    padding: 25px 40px;
+    background-color: $color1;
+}
 .navbar__search
 {
+    *
+    {
+        font-size: 1.1em;
+    }
     position: relative;
-    width: 40%;
+    width: 30%;
     &__text
     {
         padding: $searchbar_padding;
         border: none;
-        float: left;
         width: 100%;
-        background: #f1f1f18e;
+        background: #f1f1f13d;
         border-radius: 999999px;
       
     }
     &__submit
     {
+        color: white;
         position: absolute;
         padding: $searchbar_padding;
         padding-right: $searchbar_padding+2px;
@@ -32,5 +42,9 @@ $searchbar_padding: 5px;
         border: 0;
         background: none;
         cursor: pointer;
+        &:focus
+        {
+            outline: none !important;
+        }
     }
 }

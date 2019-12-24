@@ -6,6 +6,10 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.UnderLine_hover::after {
+  background: white;
+}
+
 a {
   color: black;
   text-decoration: none;
@@ -50,25 +54,11 @@ a {
           justify-content: space-evenly;
 }
 
-.btn-container__btn * {
+.btn-container__btn a {
   color: white;
   text-decoration: none;
   font-family: "Arkibal_heavy",sans-serif;
   font-weight: 900;
-}
-
-.btn-container__btn *::after {
-  content: ' ';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: white;
-  -webkit-transition: all .26s;
-  transition: all .26s;
-}
-
-.btn-container__btn *:hover::after {
-  width: 100%;
 }
 
 .content {

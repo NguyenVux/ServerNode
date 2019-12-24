@@ -1,0 +1,13 @@
+.UnderLine_hover::after {
+  content: ' ';
+  display: block;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .26s;
+  transition: all .26s;
+}
+
+.UnderLine_hover:hover::after {
+  width: 100%;
+}
+/*# sourceMappingURL=a_anim.css.map */

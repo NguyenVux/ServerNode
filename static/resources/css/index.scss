@@ -5,6 +5,17 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.UnderLine_hover
+{   
+    &::after
+    {
+        background: white;
+    }
+}
+
+
 a
 {
     color: black;
@@ -44,36 +55,21 @@ a
     position: absolute;
     top: 7%;
     right: 0%;
-    
-   // background-color: green;
     width:50%;
     display: inline-flex;
     list-style-type: none;
     justify-content: space-evenly;
     &__btn
     {
-        *
+        a
         {
             color: white;
             text-decoration: none;
             font-family: "Arkibal_heavy",sans-serif;
             font-weight: 900;
-            &::after
-            {
-                content: ' ';
-                display: block;
-                width: 0;
-                height: 2px;
-                background: white;
-                transition: all .26s;
-            }
-            &:hover::after
-            {
-                    width: 100%;
-            }
         }
     }
-}
+}    
 
 .content
 {

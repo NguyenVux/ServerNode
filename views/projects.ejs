@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/resources/css/projects.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/resources/css/a_anim.css">
     <link rel="stylesheet" href="/resources/css/arkibal_font.css">
     <link rel="stylesheet" href="/vendors/fontAwesome/css/all.css">
     <title>PROJECTS</title>
@@ -19,13 +20,29 @@
             </form>
         </div>
         <ul class="btn">
-            <li class="btn__text"><a href="/">HOME</a></li>
-            <li class="btn__text"><a href="/services">SERVICES</a></li>
-            <li class="btn__text"><a href="#">CONTACT</a></li>
-            <li class="btn__text"><a href="#">LEARNING</a></li>
+            <li class="btn__text UnderLine_hover"><a href="/">HOME</a></li>
+            <li class="btn__text UnderLine_hover"><a href="/services">SERVICES</a></li>
+            <li class="btn__text UnderLine_hover"><a href="#">CONTACT</a></li>
+            <li class="btn__text UnderLine_hover"><a href="#">LEARNING</a></li>
         </ul>
     </section>
     <section class="content">
+        <!-- <div class="project">
+            <img src="http://sage.edu.vn/wp-content/uploads/2019/03/Untitled-design-5-min-9.jpg" alt="thumbnail" class="project__thumbnail">
+            <h6 class="project__name">123</h6>
+            <p class="project__description"></p>
+            <a href="#" class="project__detail">see more</a>
+        </div> -->
+        <% p.forEach(pj => {%>
+            <div class="project">
+            <img src="<%=pj.img%>" alt="thumbnail" class="project__thumbnail">
+            <div class="project__text">
+                <h2 class="project__name"><%=pj.name%></h2>
+                <p class="project__description"><%=pj.description%></p>
+                <a href="<%=pj.url%>" class="project__detail">see more</a>    
+            </div>
+            </div>
+        <%});%>
     </section>
 </body>
 

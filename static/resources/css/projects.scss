@@ -4,15 +4,29 @@
     margin: 0;
     box-sizing: border-box!important;
     font-family: 'Montserrat', sans-serif;
+    text-decoration:none !important;
+}
+body
+{
+    background: #e9ebee;
+}
+.UnderLine_hover
+{   
+    &::after
+    {
+        background: white;
+    }
 }
 
-$color1: #1971c2;
+
+$color1: #0b79e0;
 $searchbar_padding: 15px;
 .navbar
 {
     width: 100%;
     padding: 25px 40px;
     background-color: $color1;
+    position: sticky;
 }
 .navbar__search
 {
@@ -21,6 +35,7 @@ $searchbar_padding: 15px;
         font-size: 1.1em;
     }
     position: relative;
+    display: inline-block;
     width: 30%;
     &__text
     {
@@ -46,5 +61,50 @@ $searchbar_padding: 15px;
         {
             outline: none !important;
         }
+    }
+}
+.btn
+{
+    width: 69%;
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    &__text
+    {
+        margin-left:50px;
+        color: white !important;
+        font-weight: 900;
+        a:visited
+        {
+            color: white;
+        }
+    }
+}
+
+.content
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.project
+{
+    margin: 30px;
+    width: 280px;
+    height: 300px;
+    background-color: white;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    &__thumbnail
+    {
+        width:100%;
+        height:150px;
+    }
+    &__text
+    {
+        padding: 10px;
+        width: 100%;
     }
 }

@@ -2,8 +2,9 @@ let express = require("express");
 let path = require("path");
 let mongo_client = require("mongodb").MongoClient;
 
-
-let db_url = 'mongodb://localhost:27017';
+let username = "getDB";
+let password = "18082001"
+let db_url = `mongodb://${username}:${password}@localhost:27017`;
 let app = express();
 let port = 80;
 
@@ -26,8 +27,9 @@ app.get("/projects",(req,res)=>
   let pj = [];
   mongo_client.connect(db_url, function(err, db) {
     if (err) throw err;
-    var dbo = db.db("ServerData");
-    dbo.collection("Projects").find({}).toArray((err,docs)=>{
+    var dbo = db.db("ServerNodeJS");
+    dbo.collection("projects").find({}).toArray((err,docs)=>{
+      if(err) throw err
       res.render("projects.ejs",{p:docs});
       db.close();
     });
